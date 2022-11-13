@@ -8,4 +8,18 @@ fun main(args: Array<String>) {
         원하시는 카테고리를 입력해주세요
         ***============================***
     """.trimIndent())
+
+  //  loopText()
+    val matrix = arrayOf(intArrayOf(1,2,3), intArrayOf(4,5,6))
+
+    for(row in matrix){
+        for(col in row){
+            //if(col ==2) break
+            print("$col")
+        }
+        println()
+    }
 }
+//isNullOrEmpty() : null이면 false를 반환
+//isNullOrBlank() : null과 공백 모두 false를 반환환
+
