@@ -1,15 +1,17 @@
+import screen.ShoppingHome
+
 fun main(args: Array<String>) {
-    println("안녕하세요, Shoppi 에 오신 것을 환영합니다!")
-    println("쇼핑을 계속하시려면 이름을 입력해주세요 :)")
+    val shoppingHome = ShoppingHome()
+    shoppingHome.start()
+}
+//isNullOrEmpty() : null이면 false를 반환
+//isNullOrBlank() : null과 공백 모두 false를 반환환
 
-    val name = readLine()
-    println("""
-        감사합니다. 반갑습니다, $name 님
-        원하시는 카테고리를 입력해주세요
-        ***============================***
-    """.trimIndent())
+//반복문
+/*
+fun loopText(){
 
-  //  loopText()
+    //  loopText()
     val matrix = arrayOf(intArrayOf(1,2,3), intArrayOf(4,5,6))
 
     for(row in matrix){
@@ -19,7 +21,20 @@ fun main(args: Array<String>) {
         }
         println()
     }
-}
-//isNullOrEmpty() : null이면 false를 반환
-//isNullOrBlank() : null과 공백 모두 false를 반환환
 
+  loop@ for( row in matrix){
+      for(col in row){
+          if(col ==2) break@loop
+          print("$col")
+      }
+      println()
+  }
+
+    for (row  in matrix){
+        for(col in row){
+            if(col==2) continue
+            println("$col")
+        }
+    }
+
+}*/
