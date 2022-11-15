@@ -1,10 +1,12 @@
 import screen.ShoppingHome
 
 fun main(args: Array<String>) {
+
     val shoppingHome = ShoppingHome()
     shoppingHome.start()
 
 }
+
 //isNullOrEmpty() : null이면 false를 반환
 //isNullOrBlank() : null과 공백 모두 false를 반환환
 
